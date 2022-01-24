@@ -1,0 +1,17 @@
+@import "./reset.scss";
+@import "./assets/fonts/fonts.scss";
+
+.App {
+    #bg_video {
+        z-index: -5;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    display: block;    
+    h1 {
+        font-family: 'Noto Sans SC', sans-serif;
+    }
+}
