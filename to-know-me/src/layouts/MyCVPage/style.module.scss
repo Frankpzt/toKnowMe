@@ -1,13 +1,270 @@
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+.download_btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 20vw 0px 20vw;
+    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s; /* don't forget to set a duration! */
+}
 .container {
+    animation: fadeInRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s; /* don't forget to set a duration! */
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px 20vw 20px 20vw;
+    margin: 10px 20vw 20px 20vw;
+    padding:50px 1.5vw 20px 1.5vw;
     box-shadow: 0 0 30px rgb(31, 4, 28);
-    .social_media_list {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+    font-weight: 600;
+    line-height: 1.8;
+    h2 {
+        font-weight: 900;  
     }
+
+    .basicInfo {
+        display: flex;
+        justify-content: space-between;
+        background: rgb(230, 226, 226);
+        margin-bottom: 20px;
+        .basicInfo_text {
+            margin: 10px 0px 0px 10px;
+            h2 {
+                margin-bottom: 6px;
+            }
+        }
+        img {
+            width: 6vw;
+        }
+    }
+    .education {
+        margin-bottom: 20px;
+        h2 {
+            background: rgba(56, 75, 138, 0.349);
+            margin-bottom: 6px;
+            padding-left: 10px;
+        }
+        p {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 7px;
+        }
+    }
+    .in_uni_experience {
+        margin-bottom: 20px;
+        h2 {
+            background: rgba(97, 143, 55, 0.349);
+            margin-bottom: 6px;
+            padding-left: 10px;
+        }
+        .in_uni_expItem {
+            margin-bottom: 10px;
+            padding-left: 7px;
+            h3 {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 900;
+            }
+        }
+    }
+    .working_experience {
+        margin-bottom: 20px;
+        h2 {
+            background: rgba(146, 167, 57, 0.349);
+            margin-bottom: 6px;
+            padding-left: 10px;
+        }
+        .working_expItem {
+            margin-bottom: 10px;
+            padding-left: 7px;
+            h3 {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 900;
+            }
+        }
+    }
+    .project_experience {
+        margin-bottom: 20px;
+        h2 {
+            background: rgba(163, 57, 167, 0.349);
+            margin-bottom: 6px;
+            padding-left: 10px;
+        }
+        .project_expItem {
+            margin-bottom: 10px;
+            padding-left: 7px;
+            h3 {
+                display: flex;
+                justify-content: space-between;
+                font-weight: 900;
+            }
+        }
+    }
+    .skillsSet {
+        &:hover {
+            cursor: pointer;
+        }
+        .skillsSet_content {
+            margin-top: 2vh;
+            display: flex;
+            justify-content: space-around;
+            .skillsSet_text {
+                flex:2
+            }
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        h2 {
+            background: rgba(221, 50, 20, 0.349);
+            margin-bottom: 6px;
+            padding-left: 10px;
+        }
+        .programming_language {
+            display: flex;
+            ul {
+                display: flex;
+                li {
+                    margin-right: 6px;
+                }  
+            }
+            padding-left: 7px;
+        }
+        .database_language {
+            display: flex;
+            ul {
+                display: flex;
+                li {
+                    margin-right: 6px;
+                }  
+            }
+            margin-top: 20px;
+            padding-left: 7px;
+        }
+        .frontend_language {
+            display: flex;
+            ul {
+                display: flex;
+                li {
+                    margin-right: 6px;
+                }  
+            }
+            margin-top: 20px;
+            padding-left: 7px;
+        
+        }
+    }
+    .frontend_framework {
+        display: flex;
+        ul {
+            display: flex; 
+            li {
+                margin-right: 6px;
+            } 
+        }
+        margin-top: 20px;
+        padding-left: 7px;
+      
+    }
+    .backtend_framework {
+        display: flex;
+        ul {
+            display: flex;  
+            li {
+                margin-right: 6px;
+            }
+        }
+        margin-top: 20px;
+        padding-left: 7px;
+       
+    }
+    .version_control {
+        display: flex;
+        ul {
+            display: flex;  
+            li {
+                margin-right: 6px;
+            }
+        }
+        margin-top: 20px;
+        padding-left: 7px;
+      
+    }
+    .UI_framework {
+        display: flex;
+        ul {
+            display: flex;  
+            flex-direction:column;
+            .UI_framework_firstRow {
+                display: flex;
+                li {
+                    margin-right: 6px; 
+                }
+            }
+            .UI_framework_secondRow {
+                display: flex;
+                li {
+                    margin-right: 6px; 
+                }
+            }
+            li {
+                margin-right: 2px;
+            }
+        }
+        margin-top: 20px;
+        padding-left: 7px;
+        margin-bottom: 20px;
+    }
+    .skillsSet_images_iconEffect {
+        // position:relative;
+        transform: scale(1.5);
+        transition: transform 0.3s ease-in-out;
+    }
+    .skillsSet_images {
+        flex: 2;
+        line-height: 3em;
+        margin-top: 2px;
+        display: flex;
+        img:hover {
+            // box-shadow:0 0 30px rgba(5, 5, 5, 0.198);
+            // border-radius: 5px;
+            transform: scale(1.5);
+            transition: transform 0.3s ease-in-out;
+        }
+        img {
+            padding:10px;
+        }
+    }
+
+    .comment {
+        h2 {
+            background: rgba(56, 75, 138, 0.349);
+            margin-bottom: 6px;
+            padding-left: 10px;
+        }
+    }
+
+}
+
+.social_media_list {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

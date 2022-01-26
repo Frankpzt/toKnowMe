@@ -2,6 +2,7 @@
 @import "./assets/fonts/fonts.scss";
 
 .App {
+    font-family: 'Noto Sans SC', sans-serif;
     #bg_video {
         z-index: -5;
         position: fixed;
@@ -13,5 +14,8 @@
     display: block;    
     h1 {
         font-family: 'Noto Sans SC', sans-serif;
+    }
+    h2 {
+        font-size: 18px;
     }
 }

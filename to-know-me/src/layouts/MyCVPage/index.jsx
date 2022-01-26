@@ -1,26 +1,541 @@
-import React from 'react';
+import React, { useState } from 'react';
 import style from "./style.module.scss";
 import SocialMediaList from "../../components/SocialMediaList";
 import portrait from "../../assets/images/portrait.jpg";
 import NavBar from '../../components/NavBar';
+import python_icon from "../../assets/images/icons/python.svg";
+import java_icon from "../../assets/images/icons/java.svg";
+import php_icon from "../../assets/images/icons/php.svg";
+import sql_icon from "../../assets/images/icons/mysql.svg";
+import mongodb_icon from "../../assets/images/icons/mongodb.svg";
+import html_icon from "../../assets/images/icons/html-5.svg";
+import sass_icon from "../../assets/images/icons/sass.svg";
+import js_icon from "../../assets/images/icons/javascript.svg";
+import mui_icon from "../../assets/images/icons/mui.svg";
+import react_icon from "../../assets/images/icons/react.svg";
+import jquery_icon from "../../assets/images/icons/jquery.svg";
+import codeigniter_icon from "../../assets/images/icons/codeigniter.svg";
+import node_icon from "../../assets/images/icons/node-js.svg";
+import git_icon from "../../assets/images/icons/git.svg";
+import github_icon from "../../assets/images/icons/github.svg";
+import bitbucket_icon from "../../assets/images/icons/bitbucket.svg";
+import jira_icon from "../../assets/images/icons/jira.svg";
+import xd_icon from "../../assets/images/icons/adobe-xd.svg";
+import ai_icon from "../../assets/images/icons/adobe-illustrator.svg";
+import bootstrap_icon from "../../assets/images/icons/bootstrap.svg";
+import DownloadButton from '../../components/DownloadButton';
 
 function MyCVPage(props) {
+const [pythonIcon, setPythonIcon] = useState(false);
+const [javaIcon, setJavaIcon] = useState(false);
+const [phpIcon, setPhpIcon] = useState(false);
+const [sqlIcon, setSqlIcon] = useState(false);
+const [mongodbIcon, setMongodbIcon] = useState(false);
+const [htmlIcon, setHtmlIcon] = useState(false);
+const [sassIcon, setSasslIcon] = useState(false);
+const [jsIcon, setJsIcon] = useState(false);
+const [muiIcon, setMuiIcon] = useState(false);
+const [reactIcon, setReactIcon] = useState(false);
+const [jqueryIcon, setJqueryIcon] = useState(false);
+const [codeigniterIcon, setCodeigniterIcon] = useState(false);
+const [nodeIcon, setNodeIcon] = useState(false);
+const [gitIcon, setGitIcon] = useState(false);
+const [githubIcon, setGithubIcon] = useState(false);
+const [bitbucketIcon, setBitbucketIcon] = useState(false);
+const [jiraIcon, setJiraIcon] = useState(false);
+const [xdIcon, setXdIcon] = useState(false);
+const [aiIcon, setAiIcon] = useState(false);
+const [bootstrapIcon, setBootstrapIcon] = useState(false);
+
+
+
+const togglePythonEffect = () => {
+setJavaIcon(false);
+setPythonIcon(!pythonIcon);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleJavaEffect = () => {
+setPythonIcon(false);
+setJavaIcon(!javaIcon);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const togglePhpEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(!phpIcon);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleSqlEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(!sqlIcon);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleMongoEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(!mongodbIcon);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+
+const toggleHtmlEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(!htmlIcon);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleSassEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(!sassIcon);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleJsEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(!jsIcon);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+
+const toggleMuiEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(!muiIcon);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+
+const toggleReactEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(!reactIcon);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleJqueryIconEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(!jqueryIcon);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleIgniterEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(!codeigniterIcon);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleNodeEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(!nodeIcon);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleGitEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(!gitIcon);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleGithubEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(!githubIcon);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleBitbucketEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(!bitbucketIcon);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleJiraEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(!jiraIcon);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+
+const toggleXdEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(!xdIcon);
+setAiIcon(false);
+setBootstrapIcon(false)
+}
+const toggleAiEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(!aiIcon);
+setBootstrapIcon(false);
+}
+const toggleBootstrapEffect = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setGitIcon(false);
+setGithubIcon(false);
+setBitbucketIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(!bootstrapIcon);
+}
+const toggleVersioningTool = () => {
+setPythonIcon(false);
+setJavaIcon(false);
+setPhpIcon(false);
+setSqlIcon(false);
+setMongodbIcon(false);
+setHtmlIcon(false);
+setSasslIcon(false);
+setJsIcon(false);
+setMuiIcon(false);
+setReactIcon(false);
+setJqueryIcon(false);
+setCodeigniterIcon(false);
+setNodeIcon(false);
+setJiraIcon(false);
+setXdIcon(false);
+setAiIcon(false);
+setBootstrapIcon(false);
+setGitIcon(!gitIcon);
+setGithubIcon(!githubIcon);
+setBitbucketIcon(!bitbucketIcon);
+
+}
+//
+
 const cnContent = (
 <div>
     <div className={style.basicInfo}>
-        <h2>李寒阳</h2>
-        <p>男 | 27 | lihanyang19940724@126.com</p>
+        <div className={style.basicInfo_text}>
+            <h2>李寒阳</h2>
+            <p>男 | 27 | lihanyang19940724@126.com</p>
+        </div>
         <img src={portrait} alt="证件照" />
     </div>
     <div className={style.education}>
         <h2>教育经历</h2>
-        <p>The University of Queensland 信息技术硕士 2019.07~2021.07</p>
-        <p>The Queensland University of Technology 市场营销 本科 2015.02~2017.11 </p>
+        <p><span>The University of Queensland - 信息技术 (硕士)</span> 2019.07~2021.07</p>
+        <p><span>The Queensland University of Technology - 市场营销 (本科)</span> 2015.02~2017.11 </p>
     </div>
     <div className={style.in_uni_experience}>
         <h2>校内经历</h2>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2021.04~2021.06</h3>
+            <h3><span>昆士兰大学</span> <span>2021.04~2021.06</span></h3>
             <h4>UI设计师</h4>
             <p>
                 以TED talk为主题，归纳近10年的演讲主题，设计并绘制了数据可视化作品，成果在校内展示。作品基于
@@ -28,14 +543,14 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2021.03~2021.05</h3>
+            <h3><span>昆士兰大学</span> <span>2021.03~2021.05</span></h3>
             <h4>软件工程师，硬件工程师</h4>
             <p>
                 使用C语言独立开发基于ATmega324A的“Reversi”翻转棋游戏。
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2021.03~2021.05</h3>
+            <h3><span>昆士兰大学</span> <span>2021.03~2021.05</span></h3>
             <h4>网络工程师</h4>
             <p>
                 使用python编写类似TCP/IP和UDP的基于OSI 模型的网络协议。该项目涉及socket programming，
@@ -43,7 +558,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学创新中心 2021.01~2021.03</h3>
+            <h3><span>昆士兰大学创新中心</span> <span>2021.01~2021.03</span></h3>
             <h4>前端工程师</h4>
             <p>
                 担任昆士兰大学旗下的start-up公司 ”SPACE“的实习前端工程师。主要负责为已进入开发尾声的产品的
@@ -51,7 +566,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2020.07~2020.11</h3>
+            <h3><span>昆士兰大学</span> <span>2020.07~2020.11</span></h3>
             <h4>组长，前端工程师</h4>
             <p>
                 带领团队提出，设计，开发并部署了全栈项目：电影拍摄地搜索引擎 “InScene”。
@@ -61,7 +576,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2020.07~2020.11</h3>
+            <h3><span>昆士兰大学</span> <span>2020.07~2020.11</span></h3>
             <h4>项目经理，软件工程师</h4>
             <p>
                 带领团队开发基于安卓的中文翻译学习软件”MeMa”。
@@ -72,7 +587,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2020.05~2020.07</h3>
+            <h3><span>昆士兰大学</span> <span>2020.05~2020.07</span></h3>
             <h4>组长，项目经理</h4>
             <p>
                 带领团队提出并设计“外侵物种检测软件” *该开发企划已被其他昆士兰大学EAIT开发团队作为该组的毕业
@@ -80,7 +595,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2020.04~2020.06</h3>
+            <h3><span>昆士兰大学</span> <span>2020.04~2020.06</span></h3>
             <h4>软件开发工程师</h4>
             <p>
                 开发基于Java的交通管理系统软件。使用JavaFX搭建GUI框架，该软件可估测道路拥堵情况并对各路口交通
@@ -88,7 +603,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2020.04~2020.07</h3>
+            <h3><span>昆士兰大学</span> <span>2020.04~2020.07</span></h3>
             <h4>UI/UX设计师</h4>
             <p>
                 独立设计手机应用"Physical Media Anywhere" (PAW)的高保真交互模型。应用user-centered设计理念，
@@ -96,7 +611,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2020.03~2021.05</h3>
+            <h3><span>昆士兰大学</span> <span>2020.03~2021.05</span></h3>
             <h4>全栈工程师</h4>
             <p>
                 使用bootstrap，AJAX，CSS及CodeIgniter3(PHP框架)，利用MVC开发原理，开发了一款二手媒体交流、
@@ -104,7 +619,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学EAIT学生领导力中心 2019.11~2019.12</h3>
+            <h3><span>昆士兰大学EAIT学生领导力中心</span> <span>2019.11~2019.12</span></h3>
             <h4>组长</h4>
             <p>
                 参与EAIT学院的跨学院领导力小组调研。实地考察昆士兰大学Gatton校区设施，期间与环境科学院，土木
@@ -113,7 +628,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2019.10~2019.11</h3>
+            <h3><span>昆士兰大学</span> <span>2019.10~2019.11</span></h3>
             <h4>WEB前端工程师</h4>
             <p>
                 独立设计并开发了以“度假村”为主题的网站前端页面。全程贯彻基于用户视角的网站开发，懂得如何设计
@@ -122,7 +637,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2019.09~2019.10</h3>
+            <h3><span>昆士兰大学</span> <span>2019.09~2019.10</span></h3>
             <h4>软件开发工程师</h4>
             <p>
                 独立开发基于python 的 “马里奥 “游戏。期间使用面向对象编程的框架，并使用Tkinter模块搭建GUI组
@@ -130,7 +645,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰大学 2019.07~2020.09</h3>
+            <h3><span>昆士兰大学</span> <span>2019.07~2020.09</span></h3>
             <h4>数据工程师</h4>
             <p>
                 为视讯媒体（HomeCinema）设计数据库并录入数据，并进行持续的升级与维护
@@ -140,7 +655,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰科技大学 2017.07~2017.11</h3>
+            <h3><span>昆士兰科技大学</span> <span>2017.07~2017.11</span></h3>
             <h4>市场分析师</h4>
             <p>
                 为澳大利亚 “MOLTEN STORE” 珠宝公司进行战略市场分析。项目描述
@@ -148,7 +663,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>昆士兰科技大学 2017.02~2017.06</h3>
+            <h3><span>昆士兰科技大学</span> <span>2017.02~2017.06</span></h3>
             <h4>市场分析师</h4>
             <p>
                 为 澳大利亚“Escape Travel” 旅游公司进行了数字营销市场分析并撰写市场分析报告。通过对该公司的CPC定价模型分析，优化该公司现有的Search Engine Marketing
@@ -159,7 +674,7 @@ const cnContent = (
     <div className={style.working_experience}>
         <h2>工作经历</h2>
         <div className={style.working_expItem}>
-            <h3>澳大利亚金色湖畔地产开发有限公司 2017.12~2019.03</h3>
+            <h3><span>澳大利亚金色湖畔地产开发有限公司</span> 2017.12~2019.03</h3>
             <h4>企业服务部经理</h4>
             <p>
                 多次为公司设计营销方案。组织，策划并参与了该公司在中国销售的营销计划。期间为公司宣传并翻译了多
@@ -170,7 +685,7 @@ const cnContent = (
     <div className={style.project_experience}>
         <h2>项目经历</h2>
         <div className={style.project_expItem}>
-            <h3>全栈项目：租车管理平台SPA 2021.08~2021.11</h3>
+            <h3><span>全栈项目：租车管理平台SPA</span> 2021.08~2021.11</h3>
             <h4>全栈工程师</h4>
             <p>
                 使用react+nodejs开发vehicle renting management system (VRMS). 开发模式采取agile模式，参与后
@@ -179,7 +694,7 @@ const cnContent = (
             </p>
         </div>
         <div className={style.project_expItem}>
-            <h3>澳大利亚租车公司 “Qubit Rental” 主页及后台系统开发 2020.12~2021.01</h3>
+            <h3><span>澳大利亚租车公司 “Qubit Rental” 主页及后台系统开发</span> 2020.12~2021.01</h3>
             <h4>前端工程师，项目经理</h4>
             <p>
                 基于客户对于开发时间的要求，使用WordPress为其开发了可以实现车辆展示，在线订车，车辆信息管理
@@ -190,127 +705,190 @@ const cnContent = (
     </div>
     <div className={style.skillsSet}>
         <h2>个人技能</h2>
-        <div className={style.programming_language}>
-            <h3>
-                计算机语言：
-            </h3>
-            <ul className={style.programming_language_list}>
-                <li className={style.programming_language_Python}>
-                    <h3>Python 2.0/3.0</h3>
-                    <img src="" alt="python_logo" />
-                </li>
-                <li className={style.programming_language_Java}>
-                    <h3>Java</h3>
-                    <img src="" alt="java_logo" />
-                </li>
-                <li className={style.programming_language_Php}>
-                    <h3>Php</h3>
-                    <img src="" alt="php_logo" />
-                </li>
-            </ul>
+        <div className={style.skillsSet_content}>
+            <div className={style.skillsSet_text}>
+                <div className={style.programming_language}>
+                    <h3>
+                        计算机语言：
+                    </h3>
+                    <ul className={style.programming_language_list}>
+                        <li className={style.programming_language_Python}>
+                            <h3 onClick={togglePythonEffect} onMouseEnter={togglePythonEffect}>Python 2.0/3.0,</h3>
+                        </li>
+
+                        <li className={style.programming_language_Java}>
+                            <h3 onClick={toggleJavaEffect} onMouseEnter={toggleJavaEffect}>Java,</h3>
+                        </li>
+
+                        <li className={style.programming_language_Php}>
+                            <h3 onClick={togglePhpEffect} onMouseEnter={togglePhpEffect}>Php</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.database_language}>
+                    <h3>
+                        数据库语言：
+                    </h3>
+                    <ul className={style.database_language_list}>
+                        <li className={style.database_language_sql}>
+                            <h3 onClick={toggleSqlEffect} onMouseEnter={toggleSqlEffect}>SQL,</h3>
+                            {/* <img src={sql_icon} alt="sql_logo" /> */}
+                        </li>
+                        <li className={style.database_language_mongo}>
+                            <h3 onClick={toggleMongoEffect} onMouseEnter={toggleMongoEffect}>MQL (MongoDB Query Language)</h3>
+                            {/* <img src={mongodb_icon} alt="mongo_logo" /> */}
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.frontend_language}>
+                    <h3>
+                        其他前端语言：
+                    </h3>
+                    <ul className={style.frontend_language_list}>
+                        <li className={style.frontend_language_html}>
+                            <h3 onClick={toggleHtmlEffect} onMouseEnter={toggleHtmlEffect}>HTML5,</h3>
+                            {/* <img src={html_icon} alt="html_logo" /> */}
+                        </li>
+                        <li className={style.frontend_language_css}>
+                            <h3 onClick={toggleSassEffect} onMouseEnter={toggleSassEffect}>CSS/SASS,</h3>
+                            {/* <img src={sass_icon} alt="css_logo" /> */}
+                        </li>
+                        <li className={style.frontend_language_js}>
+                            <h3 onClick={toggleJsEffect} onMouseEnter={toggleJsEffect}>JavaScript (ECMAScript 6)</h3>
+                            {/* <img src={js_icon} alt="js_logo" /> */}
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.frontend_framework}>
+                    <h3>
+                        前端框架：
+                    </h3>
+                    <ul className={style.frontend_framework_list}>
+                        <li className={style.frontend_framework_react}>
+                            <h3 onClick={toggleReactEffect} onMouseEnter={toggleReactEffect}>React,</h3>
+                            {/* <img src={react_icon} alt="React_logo" /> */}
+                        </li>
+                        <li className={style.frontend_framework_jQuery}>
+                            <h3 onClick={toggleJqueryIconEffect} onMouseEnter={toggleJqueryIconEffect}>jQuery</h3>
+                            {/* <img src={jquery_icon} alt="jQuery_logo" /> */}
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.backtend_framework}>
+                    <h3>
+                        后端框架：
+                    </h3>
+                    <ul className={style.backtend_framework_list}>
+                        <li className={style.backtend_framework_codeigniter}>
+                            <h3 onClick={toggleIgniterEffect} onMouseEnter={toggleIgniterEffect}>CodeIgniter,</h3>
+                            {/* <img src={codeigniter_icon} alt="React_logo" /> */}
+                        </li>
+                        <li className={style.backtend_framework_node}>
+                            <h3 onClick={toggleNodeEffect} onMouseEnter={toggleNodeEffect}>Node Js</h3>
+                            {/* <img src={node_icon} alt="jQuery_logo" /> */}
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.version_control}>
+                    <h3>
+                        版本管理系统及团队合作工具：
+                    </h3>
+                    <ul className={style.version_control_list}>
+                        <li className={style.version_control_git}>
+                            <h3 onClick={toggleVersioningTool} onMouseEnter={toggleVersioningTool}>Git (偏好Github与Bitbucket)</h3>
+                        </li>
+                        <li className={style.version_control_kanban}>
+                            <h3 onClick={toggleJiraEffect} onMouseEnter={toggleJiraEffect}>Jira </h3>
+
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.UI_framework}>
+                    <h3>
+                        其他UI/UX/页面布局工具：
+                    </h3>
+                    <ul className={style.UI_framework_list}>
+                        <div className={style.UI_framework_firstRow}>
+                            <li className={style.UI_framework_xd}>
+                                <h3 onClick={toggleXdEffect} onMouseEnter={toggleXdEffect}>Adobe XD,</h3>
+
+                            </li>
+                            <li className={style.UI_framework_Illustrator}>
+                                <h3 onClick={toggleAiEffect} onMouseEnter={toggleAiEffect}>Adobe Illustrator,</h3>
+
+                            </li>
+                        </div>
+                        <div className={style.UI_framework_secondRow}>
+                            <li className={style.UI_framework_mui}>
+                                <h3 onClick={toggleMuiEffect} onMouseEnter={toggleMuiEffect}>MUI(Material UI),</h3>
+
+                            </li>
+                            <li className={style.UI_framework_bootstrap}>
+                                <h3 onClick={toggleBootstrapEffect} onMouseEnter={toggleBootstrapEffect}>Bootstrap</h3>
+
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div className={style.skillsSet_images}>
+                <div className={style.skillsSet_images_firstSection}>
+                    <img src={python_icon} alt="icon" className={pythonIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={togglePythonEffect} />
+                    <img src={java_icon} alt="icon" className={javaIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleJavaEffect} />
+                    <img src={php_icon} alt="icon" className={phpIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={togglePhpEffect} />
+                    <img src={sql_icon} alt="icon" className={sqlIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleSqlEffect} />
+                </div>
+                <div className={style.skillsSet_images_secondSection}>
+                    <img src={mongodb_icon} alt="icon" className={mongodbIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleMongoEffect} />
+                    <img src={html_icon} alt="icon" className={htmlIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleHtmlEffect} />
+                    <img src={sass_icon} alt="icon" className={sassIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleSassEffect} />
+                    <img src={js_icon} alt="icon" className={jsIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleJsEffect} />
+                </div>
+                <div className={style.skillsSet_images_thirdSection}>
+                    <img src={mui_icon} alt="icon" className={muiIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleMuiEffect} />
+                    <img src={react_icon} alt="icon" className={reactIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleReactEffect} />
+                    <img src={jquery_icon} alt="icon" className={jqueryIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleJqueryIconEffect} />
+                    <img src={codeigniter_icon} alt="icon" className={codeigniterIcon?
+                        style.skillsSet_images_iconEffect: style.none} onClick={toggleIgniterEffect} />
+                </div>
+                <div className={style.skillsSet_images_fourthSection}>
+                    <img src={node_icon} alt="icon" className={nodeIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleNodeEffect} />
+                    <img src={git_icon} alt="icon" className={gitIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleGitEffect} />
+                    <img src={github_icon} alt="icon" className={githubIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleGithubEffect} />
+                    <img src={bitbucket_icon} alt="icon" className={bitbucketIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleBitbucketEffect} />
+                </div>
+                <div className={style.skillsSet_images_fifthSection}>
+                    <img src={jira_icon} alt="icon" className={jiraIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleJiraEffect} />
+                    <img src={xd_icon} alt="icon" className={xdIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleXdEffect} />
+                    <img src={ai_icon} alt="icon" className={aiIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleAiEffect} />
+                    <img src={bootstrap_icon} alt="icon" className={bootstrapIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleBootstrapEffect} />
+                </div>
+
+
+            </div>
         </div>
-        <div className={style.database_language}>
-            <h3>
-                数据库语言：
-            </h3>
-            <ul className={style.database_language_list}>
-                <li className={style.database_language_sql}>
-                    <h3>SQL</h3>
-                    <img src="" alt="sql_logo" />
-                </li>
-                <li className={style.database_language_mongo}>
-                    <h3>MQL (MongoDB Query Language)</h3>
-                    <img src="" alt="mongo_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.frontend_language}>
-            <h3>
-                其他前端语言：
-            </h3>
-            <ul className={style.frontend_language_list}>
-                <li className={style.frontend_language_html}>
-                    <h3>HTML5</h3>
-                    <img src="" alt="html_logo" />
-                </li>
-                <li className={style.frontend_language_css}>
-                    <h3>CSS/SASS</h3>
-                    <img src="" alt="css_logo" />
-                </li>
-                <li className={style.frontend_language_js}>
-                    <h3>JavaScript (ECMAScript 6)</h3>
-                    <img src="" alt="js_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.frontend_framework}>
-            <h3>
-                前端框架：
-            </h3>
-            <ul className={style.frontend_framework_list}>
-                <li className={style.frontend_framework_react}>
-                    <h3>React</h3>
-                    <img src="" alt="React_logo" />
-                </li>
-                <li className={style.frontend_framework_jQuery}>
-                    <h3>jQuery</h3>
-                    <img src="" alt="jQuery_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.backtend_framework}>
-            <h3>
-                后端框架：
-            </h3>
-            <ul className={style.backtend_framework_list}>
-                <li className={style.backtend_framework_codeigniter}>
-                    <h3>React</h3>
-                    <img src="" alt="React_logo" />
-                </li>
-                <li className={style.backtend_framework_node}>
-                    <h3>jQuery</h3>
-                    <img src="" alt="jQuery_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.version_control}>
-            <h3>
-                版本管理系统及团队合作工具：
-            </h3>
-            <ul className={style.version_control_list}>
-                <li className={style.version_control_git}>
-                    <h3>Git (偏好Github与Bitbucket)</h3>
-                    <img src="" alt="Git_logo" />
-                </li>
-                <li className={style.version_control_kanban}>
-                    <h3>Jira </h3>
-                    <img src="" alt="jira_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.UI_framework}>
-            <h3>
-                其他UI/UX/页面布局工具：
-            </h3>
-            <ul className={style.UI_framework_list}>
-                <li className={style.UI_framework_xd}>
-                    <h3>Adobe XD</h3>
-                    <img src="" alt="xd_logo" />
-                </li>
-                <li className={style.UI_framework_Illustrator}>
-                    <h3>Adobe Illustrator</h3>
-                    <img src="" alt="Illustrator_logo" />
-                </li>
-                <li className={style.UI_framework_mui}>
-                    <h3>MUI(Material UI)</h3>
-                    <img src="" alt="mui_logo" />
-                </li>
-                <li className={style.UI_framework_bootstrap}>
-                    <h3>Bootstrap</h3>
-                    <img src="" alt="bootstrap_logo" />
-                </li>
-            </ul>
-        </div>
+
+    </div>
+    <div className={style.comment}>
         <div className={style.language}>
             <h3>
                 语言：
@@ -320,13 +898,9 @@ const cnContent = (
                 协会NATTI认证的社区语言翻译资格（CCL certificate), 可胜任交替传译工作。
             </p>
         </div>
-
-    </div>
-    <div className={style.comment}>
+        <h2>自我评价：</h2>
         <p>
-            有技术背景，有较强的商业背景，善于把所学的商科知识与IT技术有机的结合起来。崇尚团队精神，执行力
-            强，时间观念强。有很强的学习和沟通能力。有6年的海外学习、工作经历，熟悉海外市场和商业规则。英
-            语熟练，有翻译经验。
+            有技术背景，有较强的商业背景，善于把所学的商科知识与IT技术有机的结合起来。崇尚团队精神，执行力强，时间观念强。有很强的学习和沟通能力。有6年的海外学习、工作经历，熟悉海外市场和商业规则。英语熟练，有翻译经验。
         </p>
     </div>
 </div>
@@ -334,19 +908,21 @@ const cnContent = (
 const enContent = (
 <div>
     <div className={style.basicInfo}>
-        <h2>Hanyang LI</h2>
-        <p>Male | 27 | lihanyang19940724@126.com</p>
+        <div className={style.basicInfo_text}>
+            <h2>Hanyang LI</h2>
+            <p>Male | 27 | lihanyang19940724@126.com</p>
+        </div>
         <img src={portrait} alt="证件照" />
     </div>
     <div className={style.education}>
         <h2>Education background</h2>
-        <p>The University of Queensland - Master of Information Technology 2019.07~2021.07</p>
-        <p>The Queensland University of Technology - Bachelor of Marketing 2015.02~2017.11 </p>
+        <p><span>The University of Queensland - Master of Information Technology</span> 2019.07~2021.07</p>
+        <p><span>The Queensland University of Technology - Bachelor of Marketing</span> 2015.02~2017.11 </p>
     </div>
     <div className={style.in_uni_experience}>
         <h2>In-University Projects:</h2>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2021.04~2021.06</h3>
+            <h3><span>The University of Queensland</span> 2021.04~2021.06</h3>
             <h4>UI Designer</h4>
             <p>
                 Designed and visualized data in ten years abstracted from “TED talks”, the composition was showcased in
@@ -354,14 +930,14 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2021.03~2021.05</h3>
+            <h3><span>The University of Queensland </span> 2021.03~2021.05</h3>
             <h4>Software Engineer and Hardware Engineer</h4>
             <p>
                 Developed a “Reversi” game in C based on ATmega324A.
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2021.03~2021.05</h3>
+            <h3><span>The University of Queensland </span>2021.03~2021.05</h3>
             <h4>Network Engineer</h4>
             <p>
                 Developed a TCP/UDP-like protocol according to the OSI model. This project involved practicing socket
@@ -370,7 +946,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland (IdeaHub) - 2021.01~2021.03</h3>
+            <h3><span>The University of Queensland (IdeaHub) </span> 2021.01~2021.03</h3>
             <h4>Frontend Engineer</h4>
             <p>
                 This was an internship with a start-up company named “SPACE” established by the “IdeaHub” of the
@@ -379,7 +955,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2020.07~2020.11</h3>
+            <h3><span>The University of Queensland</span> 2020.07~2020.11</h3>
             <h4>Team leader and Frontend Engineer</h4>
             <p>
                 Led my team to propose, design, develop and deploy a full-stack Web application, “InScene”. The project
@@ -389,7 +965,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2020.07~2020.11</h3>
+            <h3><span>The University of Queensland</span> 2020.07~2020.11</h3>
             <h4>Project Manager and Software Engineer</h4>
             <p>
                 Led my team to develop an Android-based application, “MeMa”. Due to the limited development time, we
@@ -399,7 +975,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2020.05~2020.07</h3>
+            <h3><span>The University of Queensland </span> 2020.05~2020.07</h3>
             <h4>Team Leader and Project Manager</h4>
             <p>
                 Led my team to propose and design a “Invasive species detect application”. The development proposal had
@@ -407,7 +983,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2020.04~2020.06</h3>
+            <h3><span>The University of Queensland</span> 2020.04~2020.06</h3>
             <h4>Software Engineer</h4>
             <p>
                 Developed a traffic management system. JavaFX was used to create GUI. The application is able to predict
@@ -415,7 +991,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2020.04~2020.07</h3>
+            <h3><span>The University of Queensland </span> 2020.04~2020.07</h3>
             <h4>UI/UX Designer</h4>
             <p>
                 Designed a high-fidelity prototype for a mobile application named “Physical Media Anywhere (PAW)”. The
@@ -424,7 +1000,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2020.03~2021.05</h3>
+            <h3><span>The University of Queensland</span> 2020.03~2021.05</h3>
             <h4>Full-stack Developer</h4>
             <p>
                 In this individual project, I design and created a preowned media trading platform by Utilizing
@@ -434,7 +1010,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The EAIT Leadership Center of the University of Queensland - 2019.11~2019.12</h3>
+            <h3><span>The EAIT Leadership Center of the University of Queensland</span> 2019.11~2019.12</h3>
             <h4>Team Leader</h4>
             <p>
                 Participated in a cross-faculty leadership program on the topic of “Analyzing the use purpose of a newly
@@ -443,7 +1019,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2019.10~2019.11</h3>
+            <h3><span>The University of Queensland</span> 2019.10~2019.11</h3>
             <h4>Frontend Engineer</h4>
             <p>
                 Designed and developed the frontend pages for a “holiday-themed” website. The project involved utilizing
@@ -452,14 +1028,14 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2019.09~2019.10</h3>
+            <h3><span>The University of Queensland</span> 2019.09~2019.10</h3>
             <h4>Software Engineer</h4>
             <p>
                 Developed a “Mario” game copy in python by using Tkinter, pymunk and pillow.
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The University of Queensland - 2019.07~2020.09</h3>
+            <h3><span>The University of Queensland</span> 2019.07~2020.09</h3>
             <h4>Data Engineer</h4>
             <p>
                 Populated, inserted and maintained data for a virtual film streaming company “HomeCinema”. This project
@@ -472,7 +1048,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The Queensland University of Technology - 2017.07~2017.11</h3>
+            <h3><span>The Queensland University of Technology</span> 2017.07~2017.11</h3>
             <h4>Marketing Specialist</h4>
             <p>
                 Strategic marketing analysis role for “MOLTEN STORE” (A bridal jewelry brand in Australia).
@@ -481,7 +1057,7 @@ const enContent = (
             </p>
         </div>
         <div className={style.in_uni_expItem}>
-            <h3>The Queensland University of Technology - 2017.02~2017.06</h3>
+            <h3><span>The Queensland University of Technology</span>2017.02~2017.06</h3>
             <h4>Marketing Specialist</h4>
             <p>
                 Conduct marketing analysis and prepared marketing reports for “Escape Travel Australia”. The major
@@ -493,7 +1069,8 @@ const enContent = (
     <div className={style.working_experience}>
         <h2>Working Experience</h2>
         <div className={style.working_expItem}>
-            <h3>Corporate Service Manager for Golden Lakes development Pty Ltd in Cairns Australia 2017.12~2019.03</h3>
+            <h3><span>Corporate Service Manager for Golden Lakes developments Pty Ltd in Cairns Australia</span>
+                2017.12~2019.03</h3>
             <h4>Corporate Service Manager </h4>
             <p>
                 Plan, organize and oversee company’s financial and marketing strategy. During my service, I had been
@@ -506,7 +1083,7 @@ const enContent = (
     <div className={style.project_experience}>
         <h2>Project Experience</h2>
         <div className={style.project_expItem}>
-            <h3>Full-stack Project：Car renting SPA - 2021.08~2021.11</h3>
+            <h3><span>Full-stack Project：Car renting SPA</span> 2021.08~2021.11</h3>
             <h4>Full-stack Developer</h4>
             <p>
                 The project followed a “React + Node.js” development mode. We also effectively used the advantages of
@@ -517,7 +1094,8 @@ const enContent = (
             </p>
         </div>
         <div className={style.project_expItem}>
-            <h3>Developed a Car Renting Platfrom for “Qubit Rental” (A Local Australian company) - 2020.12~2021.01</h3>
+            <h3><span>Developed a Car Renting Platfrom for “Qubit Rental” (A Local Australian company)</span>
+                2020.12~2021.01</h3>
             <h4>Frontend Engineer and Project Manager</h4>
             <p>
                 According to Client’s requirements, as the product manager, I transferred their needs to feasible
@@ -532,128 +1110,182 @@ const enContent = (
     </div>
     <div className={style.skillsSet}>
         <h2>Skills</h2>
-        <div className={style.programming_language}>
-            <h3>
-                Programming languages：
-            </h3>
-            <ul className={style.programming_language_list}>
-                <li className={style.programming_language_Python}>
-                    <h3>Python 2.0/3.0</h3>
-                    <img src="" alt="python_logo" />
-                </li>
-                <li className={style.programming_language_Java}>
-                    <h3>Java</h3>
-                    <img src="" alt="java_logo" />
-                </li>
-                <li className={style.programming_language_Php}>
-                    <h3>Php</h3>
-                    <img src="" alt="php_logo" />
-                </li>
-            </ul>
+        <div className={style.skillsSet_content}>
+            <div className={style.skillsSet_text}>
+                <div className={style.programming_language}>
+                    <h3>
+                        Programming languages：
+                    </h3>
+                    <ul className={style.programming_language_list}>
+                        <li className={style.programming_language_Python}>
+                            <h3 onClick={togglePythonEffect} onMouseEnter={togglePythonEffect}>Python 2.0/3.0,</h3>
+                        </li>
+
+                        <li className={style.programming_language_Java}>
+                            <h3 onClick={toggleJavaEffect} onMouseEnter={toggleJavaEffect}>Java,</h3>
+                        </li>
+
+                        <li className={style.programming_language_Php}>
+                            <h3 onClick={togglePhpEffect} onMouseEnter={togglePhpEffect}>Php</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.database_language}>
+                    <h3>
+                        Database languages：
+                    </h3>
+                    <ul className={style.database_language_list}>
+                        <li className={style.database_language_sql}>
+                            <h3 onClick={toggleSqlEffect} onMouseEnter={toggleSqlEffect}>SQL,</h3>
+                        </li>
+                        <li className={style.database_language_mongo}>
+                            <h3 onClick={toggleMongoEffect} onMouseEnter={toggleMongoEffect}>MQL (MongoDB Query Language)</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.frontend_language}>
+                    <h3>
+                        Frontend languages：
+                    </h3>
+                    <ul className={style.frontend_language_list}>
+                        <li className={style.frontend_language_html}>
+                            <h3 onClick={toggleHtmlEffect} onMouseEnter={toggleHtmlEffect}>HTML5,</h3>
+                        </li>
+                        <li className={style.frontend_language_css}>
+                            <h3 onClick={toggleSassEffect} onMouseEnter={toggleSassEffect}>CSS/SASS,</h3>
+                        </li>
+                        <li className={style.frontend_language_js}>
+                            <h3 onClick={toggleJsEffect} onMouseEnter={toggleJsEffect}>JavaScript (ECMAScript 6)</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.frontend_framework}>
+                    <h3>
+                        Frontend framework/libraries：
+                    </h3>
+                    <ul className={style.frontend_framework_list}>
+                        <li className={style.frontend_framework_react}>
+                            <h3 onClick={toggleReactEffect} onMouseEnter={toggleReactEffect}>React,</h3>
+                        </li>
+                        <li className={style.frontend_framework_jQuery}>
+                            <h3 onClick={toggleJqueryIconEffect} onMouseEnter={toggleJqueryIconEffect}>jQuery</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.backtend_framework}>
+                    <h3>
+                        Backend framework：
+                    </h3>
+                    <ul className={style.backtend_framework_list}>
+                        <li className={style.backtend_framework_codeigniter}>
+                            <h3 onClick={toggleIgniterEffect} onMouseEnter={toggleIgniterEffect}>CodeIgniter,</h3>
+                        </li>
+                        <li className={style.backtend_framework_node}>
+                            <h3 onClick={toggleNodeEffect} onMouseEnter={toggleNodeEffect}>Node Js</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.version_control}>
+                    <h3>
+                        Versioning/colaboration tools：
+                    </h3>
+                    <ul className={style.version_control_list}>
+                        <li className={style.version_control_git}>
+                            <h3 onClick={toggleVersioningTool} onMouseEnter={toggleVersioningTool}>Git (Github and Bitbucket)</h3>
+                        </li>
+                        <li className={style.version_control_kanban}>
+                            <h3 onClick={toggleJiraEffect} onMouseEnter={toggleJiraEffect}>Jira </h3>
+
+                        </li>
+                    </ul>
+                </div>
+                <div className={style.UI_framework}>
+                    <h3>
+                        其他UI/UX/页面布局工具：
+                    </h3>
+                    <ul className={style.UI_framework_list}>
+                        <div className={style.UI_framework_firstRow}>
+                            <li className={style.UI_framework_xd}>
+                                <h3 onClick={toggleXdEffect} onMouseEnter={toggleXdEffect}>Adobe XD,</h3>
+
+                            </li>
+                            <li className={style.UI_framework_Illustrator}>
+                                <h3 onClick={toggleAiEffect} onMouseEnter={toggleAiEffect}>Adobe Illustrator,</h3>
+
+                            </li>
+                        </div>
+                        <div className={style.UI_framework_secondRow}>
+                            <li className={style.UI_framework_mui}>
+                                <h3 onClick={toggleMuiEffect} onMouseEnter={toggleMuiEffect}>MUI(Material UI),</h3>
+
+                            </li>
+                            <li className={style.UI_framework_bootstrap}>
+                                <h3 onClick={toggleBootstrapEffect} onMouseEnter={toggleBootstrapEffect}>Bootstrap</h3>
+
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div className={style.skillsSet_images}>
+                <div className={style.skillsSet_images_firstSection}>
+                    <img src={python_icon} alt="icon" className={pythonIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={togglePythonEffect} />
+                    <img src={java_icon} alt="icon" className={javaIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleJavaEffect} />
+                    <img src={php_icon} alt="icon" className={phpIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={togglePhpEffect} />
+                    <img src={sql_icon} alt="icon" className={sqlIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleSqlEffect} />
+                </div>
+                <div className={style.skillsSet_images_secondSection}>
+                    <img src={mongodb_icon} alt="icon" className={mongodbIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleMongoEffect} />
+                    <img src={html_icon} alt="icon" className={htmlIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleHtmlEffect} />
+                    <img src={sass_icon} alt="icon" className={sassIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleSassEffect} />
+                    <img src={js_icon} alt="icon" className={jsIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleJsEffect} />
+                </div>
+                <div className={style.skillsSet_images_thirdSection}>
+                    <img src={mui_icon} alt="icon" className={muiIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleMuiEffect} />
+                    <img src={react_icon} alt="icon" className={reactIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleReactEffect} />
+                    <img src={jquery_icon} alt="icon" className={jqueryIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleJqueryIconEffect} />
+                    <img src={codeigniter_icon} alt="icon" className={codeigniterIcon?
+                        style.skillsSet_images_iconEffect: style.none} onClick={toggleIgniterEffect} />
+                </div>
+                <div className={style.skillsSet_images_fourthSection}>
+                    <img src={node_icon} alt="icon" className={nodeIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleNodeEffect} />
+                    <img src={git_icon} alt="icon" className={gitIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleGitEffect} />
+                    <img src={github_icon} alt="icon" className={githubIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleGithubEffect} />
+                    <img src={bitbucket_icon} alt="icon" className={bitbucketIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleBitbucketEffect} />
+                </div>
+                <div className={style.skillsSet_images_fifthSection}>
+                    <img src={jira_icon} alt="icon" className={jiraIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleJiraEffect} />
+                    <img src={xd_icon} alt="icon" className={xdIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleXdEffect} />
+                    <img src={ai_icon} alt="icon" className={aiIcon? style.skillsSet_images_iconEffect: style.none}
+                        onClick={toggleAiEffect} />
+                    <img src={bootstrap_icon} alt="icon" className={bootstrapIcon? style.skillsSet_images_iconEffect:
+                        style.none} onClick={toggleBootstrapEffect} />
+                </div>
+
+
+            </div>
         </div>
-        <div className={style.database_language}>
-            <h3>
-                Database Languages:
-            </h3>
-            <ul className={style.database_language_list}>
-                <li className={style.database_language_sql}>
-                    <h3>SQL</h3>
-                    <img src="" alt="sql_logo" />
-                </li>
-                <li className={style.database_language_mongo}>
-                    <h3>MQL (MongoDB Query Language)</h3>
-                    <img src="" alt="mongo_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.frontend_language}>
-            <h3>
-                Other front-end languages:
-            </h3>
-            <ul className={style.frontend_language_list}>
-                <li className={style.frontend_language_html}>
-                    <h3>HTML5</h3>
-                    <img src="" alt="html_logo" />
-                </li>
-                <li className={style.frontend_language_css}>
-                    <h3>CSS/SASS</h3>
-                    <img src="" alt="css_logo" />
-                </li>
-                <li className={style.frontend_language_js}>
-                    <h3>JavaScript (ECMAScript 6)</h3>
-                    <img src="" alt="js_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.frontend_framework}>
-            <h3>
-                Front-end Frameworks/libraries:：
-            </h3>
-            <ul className={style.frontend_framework_list}>
-                <li className={style.frontend_framework_react}>
-                    <h3>React</h3>
-                    <img src="" alt="React_logo" />
-                </li>
-                <li className={style.frontend_framework_jQuery}>
-                    <h3>jQuery</h3>
-                    <img src="" alt="jQuery_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.backtend_framework}>
-            <h3>
-                Back-end Frameworks/libraries：
-            </h3>
-            <ul className={style.backtend_framework_list}>
-                <li className={style.backtend_framework_codeigniter}>
-                    <h3>React</h3>
-                    <img src="" alt="React_logo" />
-                </li>
-                <li className={style.backtend_framework_node}>
-                    <h3>jQuery</h3>
-                    <img src="" alt="jQuery_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.version_control}>
-            <h3>
-                Version Control System and Colaboration Tools：
-            </h3>
-            <ul className={style.version_control_list}>
-                <li className={style.version_control_git}>
-                    <h3>Git (Github and Bitbucket are prefered)</h3>
-                    <img src="" alt="Git_logo" />
-                </li>
-                <li className={style.version_control_kanban}>
-                    <h3>Jira </h3>
-                    <img src="" alt="jira_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.UI_framework}>
-            <h3>
-                Others UI/UX Tools:
-            </h3>
-            <ul className={style.UI_framework_list}>
-                <li className={style.UI_framework_xd}>
-                    <h3>Adobe XD</h3>
-                    <img src="" alt="xd_logo" />
-                </li>
-                <li className={style.UI_framework_Illustrator}>
-                    <h3>Adobe Illustrator</h3>
-                    <img src="" alt="Illustrator_logo" />
-                </li>
-                <li className={style.UI_framework_mui}>
-                    <h3>MUI(Material UI)</h3>
-                    <img src="" alt="mui_logo" />
-                </li>
-                <li className={style.UI_framework_bootstrap}>
-                    <h3>Bootstrap</h3>
-                    <img src="" alt="bootstrap_logo" />
-                </li>
-            </ul>
-        </div>
-        <div className={style.language}>
+
+    </div>
+    <div className={style.comment}>
+    <div className={style.language}>
             <h3>
                 Language：
             </h3>
@@ -663,9 +1295,6 @@ const enContent = (
                 am also able to conduct translation/interpreting assignments between English and Mandarin.
             </p>
         </div>
-
-    </div>
-    <div className={style.comment}>
         <p>
             I am good at combing my ICT know-hows with my business knowledge to benefit your company/organization. I
             also appreciate teamwork dynamics and believe active learning and maintaining heathy relationship with
@@ -679,6 +1308,9 @@ const enContent = (
 return (
 <div>
     <NavBar myCvActive={true} lan={props.lan} changeLan={props.changeLan} />
+    <div className={style.download_btn}>
+        <DownloadButton  lan={props.lan}/>
+    </div>
     <div className={style.container}>
         {
         props.lan? cnContent : enContent
