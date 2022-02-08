@@ -6,15 +6,15 @@
     background: rgba(0, 0, 0, 0.459);
     position: sticky;
     top: 0;
-    padding: 35px 0px 45px 0px;
+    padding: 15px 0px 15px 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 0.25em;
     align-items: center;
     .avatar {
-        position: absolute;
-        top: 15px;
-        left: 130px;
+        margin-right: 5vw;
+        margin-left: 1vw;
         background: rgba(255, 255, 255, 0.822);
         width: 100px;
         height: 100px;
@@ -41,7 +41,7 @@
         position: relative;
         cursor: pointer;
         background: none;
-        text-shadow: 3px 3px 10px rgba(0,0,0,.45);
+        text-shadow: 3px 3px 10px rgba(0,0,0,.45);  
         &:before, &:after {
             position: absolute;
             top: 50%;
@@ -73,6 +73,7 @@
         }
     }
     .myCvActive {
+        // transform: scale(1.1);
         font-family: 'Noto Sans SC', sans-serif;
         text-align: center;
         margin: 15px 0px 0px 20px;
@@ -127,11 +128,9 @@
         font-size: 13px;
     }
     .home_translation_btn {
+        margin-left: 5vw;
         width: 50px;
         height: 50px;
-        top: 45px;
-        right: 130px;
-        position: absolute;
         border: none;
         background: rgb(243, 237, 237);
         border-radius:50%;

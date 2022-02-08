@@ -1,0 +1,66 @@
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+
+.container {
+    animation: fadeInLeft;
+    animation-duration: 0.5s;
+    margin: 5vh 20vw 20px 20vw;
+    background: #ffffff;
+    box-shadow: 0 0 30px rgb(31, 4, 28);
+    .social_media_list {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.25em;
+        justify-content: center;
+        // margin: 1vh min(20vw) min(1vh) min(20vw);
+        padding: 3vh 0 3vh 0;
+        .card {
+            z-index: 0;
+            width: 20vw;
+            height: fit-content;
+            border: 1px solid rgba(0, 0, 0, 0.178);
+            box-shadow: 2px 5px 5px rgba(19, 18, 18, 0.342);
+            .inscene_logo {
+                background: rgb(88, 83, 83);
+            }
+            &:first-child:hover {
+                box-shadow: 2px 5px 5px rgba(19, 18, 18, 0.157);
+                transform: scale(1.1);
+            }
+            &:nth-child(2):hover {
+                box-shadow: 2px 5px 5px rgba(19, 18, 18, 0.157);
+                transform: scale(1.1);
+            }
+            &:nth-child(3):hover {
+                box-shadow: 2px 5px 5px rgba(19, 18, 18, 0.157);
+                transform: scale(1.1);
+            }
+        }
+        .quantum_logo {
+            background: #000;
+            height: 180px;
+            // width: fit-content;
+        }
+    }
+}
